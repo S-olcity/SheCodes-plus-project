@@ -4,33 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sol-city weather app</title>
-
+    <link rel="stylesheet" href="src/index.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Patua+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <form>
-            <input type="search" placeholder="Enter a city" required/>
-            <input type="submit" value="Search"/>        
-        </form>
-    </header>
-    <main>
-        <h1> Paris</h1>
-        <p>
-         <div>   time :18:44 , cloudy </div>
-         <div>   humidity:<strong> 48% </strong>, wind: <strong>3Km/hr </strong></div>
-        </p>
-        <div>
-            <div>
-                <div> tus</div>
-                <div>🌤 </div>
-                <div > 10°</div>
-                <div>5°</div>
-
+    <div class="container">
+        <header>
+            <form>
+                <input type="search" placeholder="Enter a city" required class="city-search"/>
+                <input type="submit" value="Search" class="search-button"/>        
+            </form>
+        </header>
+        <main>
+            <div class="forecast-container">
+                <h1 class="searched-city" id="">Paris</h1>
+                <p class="forecast-detail">
+                    <span id="time">Time: 18:44</span>, <span id="description">Cloudy</span>
+                </br>
+            </br>
+                    Humidity: <strong id="humidity">48%</strong>, Wind: <strong id="wind">3 Km/hr</strong>
+                </p>
+                <div class="weather-temperature">
+                    <span class="forecast-temperature-icon">⛅️</span><span class="the-forecast-temperature">11</span><span class="forecast-weather-unit">°C</span>
+                </div>
             </div>
-        </div>
-    </main>
-    <footer>
-      This is coded by  <a href=""> Solane Adeba</a> .It is an open source <a href=""> code in Github</a>.hosted <a href="">on netlify</a>
-    </footer>
+
+            <div class="weather-forecast">
+                <div class="weather-forecast-date">Tus</div>
+                <div class="weather-forecast-icon">🌤</div>
+                <div class="weather-forecast-temperature">
+                    <div class="weather-forecast-temperature-max">10°</div>
+                    <div class="weather-forecast-temperature-min">5°</div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            This is coded by <a href="">Solane Adeba</a>. It is an open source <a href="">code in Github</a> hosted <a href="">on Netlify</a>.
+        </footer>
+    </div>
 </body>
 </html>

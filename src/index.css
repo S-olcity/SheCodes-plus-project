@@ -1,0 +1,111 @@
+body {
+  background:linear-gradient(to top, rgba(0,0,0,0.5)40%,rgba(0,0,0,0.5)60%), url("https://images.pexels.com/photos/907485/pexels-photo-907485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  height:109vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 45px auto;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
+  border-radius: 18px;
+  padding: 30px;
+  background: #c4bbf0 ;
+  font-family: "Patua One", serif;
+  opacity:0.7;
+}
+
+.city-search {
+  background: #f4eeff;
+  border: none;
+  border-radius: 6px;
+  width: 80%;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-family: "Patua One", serif;
+}
+
+.search-button {
+  background: #835af1;
+  border: none;
+  margin-left: 5px;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 15px 20px;
+  transition: all 100ms ease-in-out;
+  font-family: "Patua One", serif;
+}
+.search-button:hover {
+  background-color: white;
+  color: #835af1;
+}
+
+main {
+  padding: 30px 0;
+}
+
+.searched-city {
+  margin: 0;
+  font-size: 38px;
+  line-height: 48px;
+
+  opacity: 0.7;
+}
+
+.forecast-container {
+  justify-content: space-between;
+}
+
+.forecast-detail {
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 24px;
+  font-weight: 100;
+}
+
+strong {
+  color: #a58bff;
+}
+
+.weather-temperature {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1%;
+  margin-top: 20px;
+}
+
+.forecast-temperature-icon {
+  margin-top: -120px;
+  font-size: 68px;
+}
+
+.the-forecast-temperature {
+  font-weight: bold;
+  margin-top: -120px;
+  font-size: 88px;
+  opacity: 0.7;
+}
+
+.forecast-weather-unit {
+  font-size: 24px;
+  margin-top: -115px;
+  opacity: 0.7;
+}
+.weather-forecast {
+  text-align: center;
+  font-size: 22px;
+  opacity: 0.7;
+  border-radius: 10px;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
+  font-family: "Baloo 2", sans-serif;
+  background:#dcb5ff ;
+}
+footer {
+  border-top: 1px solid #d1c5c5;
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: monospace;
+}
